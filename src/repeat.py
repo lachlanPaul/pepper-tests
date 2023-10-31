@@ -10,7 +10,7 @@ from naoqi import ALProxy
 
 IP = "192.168.1.58"
 PORT = 9559
-FILEPATH = "./results/repeat_recording.wav"
+FILEPATH = "./resource/ug/repeat_recording.mp3"
 
 tts = ALProxy("ALTextToSpeech", IP, PORT)
 audio = ALProxy("ALAudioDevice", IP, PORT)
@@ -26,7 +26,7 @@ def main():
     tts.say("You have 10 seconds to speak. Recording begins now.")
 
     print("Recording audio", end="\r")
-    record.startMicrophonesRecording(FILEPATH, "wav", 16000, (0, 0, 1, 0))
+    record.startMicrophonesRecording(FILEPATH, "mp3", 16000, (0, 0, 1, 0))
     time.sleep(10)  # Really hope this doesn't shut down the actual recording that's happening (I miss asyncio)
 
     print("Finished recording audio", end="\r")
