@@ -12,9 +12,10 @@ tts = ALProxy("ALTextToSpeech", IP, PORT)
 
 def main():
     global tts, play
+
     tts.say("Time for my special move!")
     time.sleep(2)
-    play.playFile("src/resource/dp.mp3", 0.5, 1.0)  # Plays Ryu's "Shoryuken!" sfx from SFII
+    play.playFile("/home/nao/lachlan/dp.mp3", 0.5, 1.0)  # Plays Ryu's "Shoryuken!" sfx from SFII
 
 if __name__ == '__main__':
     main()
