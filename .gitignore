@@ -1,6 +1,4 @@
 # Paths to ignore
 .idea
-/src/resource
 
 # Files from ignored paths to allow
-!/src/resource/README.md
