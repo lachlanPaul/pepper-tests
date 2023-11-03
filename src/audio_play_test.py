@@ -1,4 +1,8 @@
-# Test for .mp3 capability
+"""
+    Test for .mp3 capability
+
+    Lachlan Paul, 2023    
+"""
 import time
 
 from naoqi import ALProxy

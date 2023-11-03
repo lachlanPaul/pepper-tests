@@ -1,7 +1,8 @@
-# I hate this API
-# Update: I fixed it, I hate it slightly less now :)
-# Update: nvm
-# Yet another update: Taking reference from some randoms repo, let's hope it works
+"""
+    Records 10 seconds of audio from Pepper's microphone, then plays it back.
+
+    Lachlan Paul, 2023
+"""
 from __future__ import print_function  # This is so I can use end in my print statements
 
 import time
