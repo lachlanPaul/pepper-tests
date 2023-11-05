@@ -13,6 +13,8 @@ PORT = 9559
 photoCapture = ALProxy("ALPhotoCapture", IP, PORT)
 tablet = ALProxy("ALTabletService", IP, PORT)
 tts = ALProxy("ALTextToSpeech", IP, PORT)
+
+
 def main():
     photoCapture.setPictureFormat("jpg")
     photoCapture.takePictures(1, "/home/nao/lachlan/photo/capture.jpg", "image")
