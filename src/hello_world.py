@@ -1,3 +1,4 @@
 from naoqi import ALProxy
-tts = ALProxy("ALTextToSpeech", "192.168.1.58", 9559)
+from src.common.ip_port import IP, PORT
+tts = ALProxy("ALTextToSpeech", IP, PORT)
 tts.say("Hello, world!")

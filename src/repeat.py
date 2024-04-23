@@ -8,9 +8,8 @@ from __future__ import print_function  # This is so I can use end in my print st
 import time
 
 from naoqi import ALProxy
+from src.common.ip_port import IP, PORT
 
-IP = "192.168.1.58"
-PORT = 9559
 FILEPATH = "/home/nao/lachlan/recordings/repeat.wav"
 
 tts = ALProxy("ALTextToSpeech", IP, PORT)

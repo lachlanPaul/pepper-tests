@@ -5,12 +5,10 @@
 """
 
 from naoqi import ALProxy
-
-IP = "192.168.1.58"
-PORT = 9559
+from src.common.ip_port import IP, PORT
 
 network = ALProxy("ALConnectionManager", IP, PORT)
-tts = ALProxy("AlTextToSpeech", IP, PORT)
+tts = ALProxy("ALTextToSpeech", IP, PORT)
 
 if network.state == "online":
     tts.say("I am connected and online")

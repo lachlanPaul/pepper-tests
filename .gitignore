@@ -1,4 +1,3 @@
 # Paths to ignore
 .idea
-
-# Files from ignored paths to allow
+/venv/

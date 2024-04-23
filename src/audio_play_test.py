@@ -6,9 +6,7 @@
 import time
 
 from naoqi import ALProxy
-
-IP = "192.168.1.58"
-PORT = 9559
+from src.common.ip_port import IP, PORT
 
 play = ALProxy("ALAudioPlayer", IP, PORT)
 tts = ALProxy("ALTextToSpeech", IP, PORT)

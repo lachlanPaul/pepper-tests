@@ -4,13 +4,11 @@
     Lachlan Paul, 2023
 """
 from naoqi import ALProxy
+from src.common.ip_port import IP, PORT
 
 words = {
     "run": "move at a speed faster than a walk, never having both or all the feet on the ground at the same time."
 }
-
-IP = "192.168.1.58"
-PORT = 9559
 
 tts = ALProxy("ALTextToSpeech", IP, PORT)
 
